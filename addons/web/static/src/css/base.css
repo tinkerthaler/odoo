@@ -3444,3 +3444,5 @@ body {
     position: static !important;
   }
 }
+
+td.announcement_bar { display: none }
