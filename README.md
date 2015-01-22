@@ -1,4 +1,6 @@
-[![Build Status](http://runbot.odoo.com/runbot/badge/default/1/8.0.svg)](http://runbot.odoo.com/runbot)
+*NOTE: This is a forked repository, please see the original repository at https://github.com/odoo/odoo*
+
+This fork is fixed on version 8.0 and is enhanced with support for the Nix package manager.
 
 Odoo
 ----
@@ -10,8 +12,14 @@ The main Odoo Apps include an <a href="https://www.odoo.com/page/crm">Open Sourc
 Odoo Apps can be used as stand-alone applications, but they also integrate seamlessly so you get
 a full-featured <a href="https://www.odoo.com">Open Source ERP</a> when you install several Apps.
 
+## Prerequisites
 
-## Prepare system
+Before reading on, first install Nix (the package manager) or NixOS (which includes Nix).
+
+[NixOS](https://nixos.org)  
+[Nix](https://nixos.org/nix/)
+
+## Prepare system: Nix
 
 In summary we will checkout a particular branch of nixpkgs that (1) contains all odoo-requirements and (2) that currently works (JAN 2015, at the moment NixOS/nixpkgs is broken wrt python packages such as ldap due to gcc->cc refactoring)
 
@@ -47,7 +55,7 @@ First create a postgres user
 
 The easiest is to checkout my branch, but if you like you can clone the original odoo and just use (and possibly update) my default.nix
 
-    git clone https://github.com/tinkerthaler/odoo.git
+    git clone https://github.com/tinkerthaler/odoo.git --branch 8.0 --single-branch
 
 Now enter the nix-env (this might take a while because everything is build from source!)
 
