@@ -1,4 +1,4 @@
-*NOTE: This is a forked repository, please see the original repository at https://github.com/odoo/odoo
+*NOTE: This is a forked repository, please see the original repository at https://github.com/odoo/odoo*
 
 Odoo
 ----
