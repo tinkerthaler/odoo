@@ -1,4 +1,4 @@
-[![Build Status](http://runbot.odoo.com/runbot/badge/default/1/8.0.svg)](http://runbot.odoo.com/runbot)
+*NOTE: This is a forked repository, please see the original repository at https://github.com/odoo/odoo
 
 Odoo
 ----
