@@ -1,3 +1,8 @@
+## OS
+
+Check nixpkgs
+
+## Database
 Startup database
 
 su - postgres
@@ -17,7 +22,8 @@ select login from res_users;
 exit
 
 cd /opt/odoo-tinkhaven
-./odoo.py --addons-path=addons --db-filter=paintcreation$
+git checkout 8.0_DEMO_PAINTCREATION
+./odoo.py --addons-path=addons --log-level=debug --db-filter=paintcreation$
 
 On client
 ssh -L 9000:jujuy:8069 tinkerthaler@jujuy
