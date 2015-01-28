@@ -158,6 +158,9 @@ class res_partner(osv.osv):
     __check_vat_ch_re1 = re.compile(r'(MWST|TVA|IVA)[0-9]{6}$')
     __check_vat_ch_re2 = re.compile(r'E([0-9]{9}|-[0-9]{3}\.[0-9]{3}\.[0-9]{3})(MWST|TVA|IVA)$')
 
+    def check_vat_be(self, vat):
+        return True
+
     def check_vat_ch(self, vat):
         '''
         Check Switzerland VAT number.
