@@ -8,10 +8,9 @@ let
   
 in stdenv.mkDerivation {
   name = "odoo";
-  #builder = ./builder.sh;
   src = fetchurl {
-    url = https://nightly.odoo.com/8.0/nightly/src/odoo_8.0.latest.tar.gz;
-    md5 = "7aea672b8f946ee2c8fc020dae040690";
+    url = https://nightly.odoo.com/8.0/nightly/src/odoo_8.0.20150330.tar.gz;
+    md5 = "8686e5fbc3f1d36c38948645d8b3ffc1";
   };
   buildInputs = with pkgs.python27Packages; [
     setuptools
