@@ -61,3 +61,5 @@ Now enter the nix-env (this might take a while because everything is build from 
 
     nix-shell 
 
+## Database schema
+useopenerp.com/v8
