@@ -53,6 +53,8 @@ First create a postgres user
 
 ## Checkout odoo-8 and checkout the nix file
 
+Note: these instruction are targeted for NixOS. It might also work on other OSes with the Nix package manager installed but this is not guaranteed.
+
 The easiest is to checkout my branch, but if you like you can clone the original odoo and just use (and possibly update) my default.nix
 
     git clone https://github.com/tinkerthaler/odoo.git --branch 8.0 --single-branch
