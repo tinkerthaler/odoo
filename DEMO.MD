@@ -13,7 +13,16 @@ pg_ctl start -l /var/lib/pgsql/logs/postgres.log
 psql
 \l
 
-\c paintcreation
+# If db does not yet exist, create it
+  CREATE DATABASE odoo WITH OWNER=odoo ENCODING='UTF8';
+  # Go to the server to have it initialized
+  ./odoo.py --addons-path=addons --log-level=debug --db-filter=paintcreation$
+  master password: admin (todo: where does this come from?)
+  database name: odoo
+  password: password
+
+# \c paintcreation
+\c odoo
 \dt
 \d+ res_users
 select login from res_users;
