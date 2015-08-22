@@ -59,9 +59,9 @@ in stdenv.mkDerivation {
     xlwt
     pkgs.postgresql
     pkgs.nodejs
-    pkgs.nodePackages.npm
-    pkgs.nodePackages.less
-    pkgs.nodePackages.less-plugin-clean-css
+    #pkgs.nodePackages.npm
+    #pkgs.nodePackages.less
+    #pkgs.nodePackages.less-plugin-clean-css
   ];
 
   PGDATA="/var/lib/pgsql/data";
