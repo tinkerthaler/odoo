@@ -57,7 +57,7 @@ The easiest is to checkout my branch, but if you like you can clone the original
 
     git clone https://github.com/tinkerthaler/odoo.git --branch 8.0 --single-branch
 
-Now enter the nix-env (this might take a while because everything is build from source!)
+Now enter the nix-env
 
     nix-shell 
 
